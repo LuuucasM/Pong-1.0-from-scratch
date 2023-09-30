@@ -71,12 +71,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Dev\Pong1.0-from-scratch\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Dev\Pong1.0-from-scratch\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Dev\Pong-1.0-from-scratch\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Dev\Pong-1.0-from-scratch\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>C:\Dev\Pong-from-scratch-1.0\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Dev\Pong-from-scratch-1.0\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Dev\Pong-1.0-from-scratch\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Dev\Pong-1.0-from-scratch\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
