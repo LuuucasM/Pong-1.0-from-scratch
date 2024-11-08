@@ -127,7 +127,6 @@ void Game::ProcessInput(double dt) {
 	rigidBody->Position.y += (movement->speed * movement->direction);
 }
 void Game::Update(double dt) {
-	ECSCoord.GetSystem<CollisionSystem>()->Update();
 	auto ballRigidBody = ECSCoord.GetComponent<C_RigidBody2D>(Ball);
 	auto ballMovement = ECSCoord.GetComponent<C_Movement>(Ball);
 	ballRigidBody->Position.x += ballMovement->velocity.x;
@@ -150,7 +149,7 @@ void Game::Update(double dt) {
 	else {
 		aiRigidBody->Position.y += aiMovement->speed * aiMovement->direction;
 	}
-	
+	ECSCoord.GetSystem<CollisionSystem>()->Update();
 }
 void Game::Render() {
 	ECSCoord.GetSystem<RenderSystem2D>()->Update();
